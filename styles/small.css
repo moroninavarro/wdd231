@@ -6,53 +6,93 @@ body{
     background-color: white;
 }
 
-/* */
-
 header{
-    background-color: rgb(15, 120, 182);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     padding: 20px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #1a529c;
+    position: relative;
 }
-
-
-
-nav{
-    background-color: #000000ec;
-    margin: 1 auto;
-    padding: 1px;
-    display: none;
+.me{
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    
 }
-
-li::before{
-    display: block;
-    content: "≡";
-    text-align: right;
-}
-li.show::before{
-    content: "X";
-}
-
-
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
+.mitextspan{
+    
     color: white;
-    text-align:center;
-    padding: 1rem;
+    font-size: 24px;
+    margin-left: 10px;
+    justify-content:center;
+}
+.navigation {
+    display: flex;
+   
+    justify-content:space-around;
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navigation a:hover, navigation a:active {
+    color: rgb(0, 0, 0);
+}
+.navigation a {
+    display: flex;
+    list-style: none;
+    color: white;
     text-decoration: none;
 }
+.navigation li {
+     margin-right: 10px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 
-nav a:hover{
-   text-decoration:overline;
+}
+
+
+.location{
+    flex:1;
+    border:#1a529c;
+    border-radius: 8px;
+    min-height: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    background-color:rgb(255, 255, 255);
     
 }
 
+.location img,
+h3{
+    border-radius: 8px;
+    justify-content: center;
+   
+}
+.work{
+ flex:2;
+    border:#1a529c;
+    border-radius: 8px;
+    min-height: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    background-color:rgb(255, 255, 255);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: #1a529c;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 1px;
+}
 /* Ready/*/
 
 

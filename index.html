@@ -7,9 +7,9 @@
     <meta name="description" content="This page is a chamber of commerce to be able to promote the business interests of its members.">
     <meta name="author" content="Moroni Alanis Navarro">
 
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
-    
+    <link rel="stylesheet" href="styles/larger.css">
+
     <script src= "scripts/course.js" defer></script>
     <script src= "scripts/date.js" defer></script>
     <script src= "scripts/navigation.js" defer></script>
@@ -22,34 +22,45 @@
 
 <body>
 
-    <header>
-        <img src="images/me.jpg" alt="Thats me" width="110" height="130">   
-        <span>MORONI ALANIS NAVARRO</span>
+      <header>
+        <div class="container">
+        <a id="menu" href="#"></a>
+        <img src="images/me.jpg" alt="Thats me" width="120" height="140" class="me">
+        <span class="mitextspan">Moroni A. Navarro</span>
+        </div>
+        
+        <nav>
+                <ul class="navigation">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="chamber">Chamber</a></li>
+                    <li><a href="#" id="final">Final</a></li>
+                    <li><a href="#" id="github">Github Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/moroni-alanis-2485bb2b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="small">LinkedIn</a></li>
+                </ul>
+            
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-        <li><a href="#" class="home">Home</a></li>
-        <li><a href="#" class="chamber">Chamber</a></li>
-        <li><a href="#" class="final">Final</a></li>
-        <li><a href="#" class="github">GitHub Profile</a></li>
-        <li><a href="https://www.linkedin.com/in/moroni-alanis-2485bb2b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a></li>
-        </ul>
-    </nav>
 
 
         
     <main>
         <h1>Home</h1>
-        <section class="izquierda"> <h2>Course Work</h2>• • •  </section>
-
-        <section class="derecha"> 
-            <h2>Tijuana, Mexico</h2>
-            <img src="images/tijuana-mexico.jpeg" alt="City" width="500" height="500">
+        <div class="contenedor">
+        <section class="work"> 
+            <h2>Course Work</h2>• • • 
         </section>
 
+        <section class="location"> 
+            <h2>Tijuana, Mexico</h2>
+            <img src="images/tijuana-mexico.jpeg" alt="City" width="300" height="500">
+            <h3>Center City</h3>
+        </section>
+        </div>
+        
+        <section class="certificate"> <h2>Web and Computer Programming Certificate</h2></section>
 
-        <section class="abajo"> <h2>Web and Computer Programming Certificate</h2></section>
+
     </main>
     
 
