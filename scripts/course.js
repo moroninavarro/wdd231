@@ -78,4 +78,37 @@ const courses = [
     }
 ]
 
+const container = document.getElementById("courseList");
+const buttons = document.querySelectorAll("#buttons button");
+
+function renderCourses(filtered){
+    container.innerHTML = "";
+    filtered.forEach(course =>{
+        const div = document.createElement("div");
+        div.classList.add("card");
+        if (course.completed){
+            div.classList.add("completed");
+        }
+        div.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        container.appendChild(div);
+    });
+}
+
+buttons.forEach(button =>{
+    button.addEventListener("click", () =>{
+        const filter = button.dataset.filter;
+        let filtered = [];
+
+        if (filter === "all"){
+            filtered = courses;
+        } else{
+            filtered = courses.filter(course =>
+                course.subject.toLowerCase()=== filter
+            );
+        }
+        renderCourses(filtered);
+    });
+});
+
+renderCourses(courses);
 

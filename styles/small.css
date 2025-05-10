@@ -14,6 +14,8 @@ header{
     margin: 0;
     padding: 0;
 }
+
+
 .container{
     display: flex;
     justify-content: center;
@@ -82,10 +84,12 @@ nav ul {
     
 }
 
-.location img,
+
+main .location img,
 h3{
+    display: flex;
     border-radius: 8px;
-    justify-content: right;
+    justify-content: center;
     padding: 10px;
     
    
@@ -111,11 +115,39 @@ h3{
     box-shadow: 0 0 10px;
     background-color: white;
 }
+#courseList{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 5px;
+    margin: 10px;
+
+}
+.card{
+    background-color: rgba(187, 38, 38, 0.884);
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+}
+.botons button{
+    background-color: rgba(187, 38, 38, 0.884);
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+section .botons{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+}
 
 h2{
     display: flex;
     justify-content: center;
     background-color: #1a529c;
+    color: white;
     padding: 10px;
     margin: 0px;
     border-radius: 1px;
@@ -138,6 +170,7 @@ footer{
     background-color:rgb(15, 120, 182);
     padding: 20px;
     text-align: center;
+    font-size: 25px;
     
 }
 .first{
