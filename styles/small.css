@@ -1,5 +1,6 @@
 *{
     font-family: "Quattrocento", serif;
+    
 }
 
 body{
@@ -7,15 +8,19 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content:space-between;
-    padding: 20px;
+  
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #1a529c;
-    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    
+    justify-content: center;
+   
 }
 .me{
-    border-radius: 50%;
+    
     position: relative;
     justify-content: center;
     
@@ -24,20 +29,22 @@ header{
     
     color: white;
     font-size: 24px;
-    margin-left: 10px;
-    justify-content:center;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 .navigation {
     display: flex;
-   
     justify-content:space-around;
     list-style: none;
     background-color: black;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    
 }
 .navigation a:hover, navigation a:active {
-    color: rgb(0, 0, 0);
+    color: rgb(192, 77, 77);
 }
 .navigation a {
     display: flex;
@@ -60,6 +67,7 @@ header{
 
 .location{
     flex:1;
+    margin: 20px;
     border:#1a529c;
     border-radius: 8px;
     min-height: 280px;
@@ -72,17 +80,31 @@ header{
 .location img,
 h3{
     border-radius: 8px;
-    justify-content: center;
+    justify-content: right;
+    padding: 10px;
+    
    
 }
 .work{
- flex:2;
+    flex:2;
+    margin: 20px;
     border:#1a529c;
     border-radius: 8px;
     min-height: 280px;
-    border-radius: 10px;
+    
     box-shadow: 0 0 10px;
     background-color:rgb(255, 255, 255);
+}
+
+.certificate{
+    flex:2;
+    margin: 20px;
+    
+    border:#1a529c;
+    border-radius: 8px;
+    min-height: 280px;
+    box-shadow: 0 0 10px;
+    background-color: white;
 }
 
 h2{
@@ -99,6 +121,7 @@ h2{
 
 h1{
     color:rgb(15, 120, 182);
+    margin: 20px;
 }
 
 
