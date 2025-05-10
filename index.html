@@ -6,34 +6,52 @@
     <title>WDD 231 - Moroni</title>
     <meta name="description" content="This page is a chamber of commerce to be able to promote the business interests of its members.">
     <meta name="author" content="Moroni Alanis Navarro">
+
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
     <script src= "scripts/course.js" defer></script>
     <script src= "scripts/date.js" defer></script>
     <script src= "scripts/navigation.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
+
     <header>
-         <img src="images/me.jpg" alt="">   
+        <img src="images/me.jpg" alt="Thats me" width="110" height="130">   
+        <span>MORONI ALANIS NAVARRO</span>
      </header>
+
+
     <nav>
         <ul>
         <li><a href="#" class="home">Home</a></li>
         <li><a href="#" class="chamber">Chamber</a></li>
         <li><a href="#" class="final">Final</a></li>
         <li><a href="#" class="github">GitHub Profile</a></li>
-        <li><a href="#" class="linkedin">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/moroni-alanis-2485bb2b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a></li>
         </ul>
     </nav>
         
     <main>
-        <h1></h1>
-        <section> <h2></h2></section>
-        <section> <h2></h2></section>
-        <section> <h2></h2></section>
+        <h1>Home</h1>
+        <section class="izquierda"> <h2>Course Work</h2></section>
+
+        <section class="derecha"> 
+            <h2>Tijuana, Mexico</h2>
+            <img src="images/tijuana-mexico.jpeg" alt="City" width="500" height="500">
+        </section>
+        <section class="abajo"> <h2>Web and Computer Programming Certificate</h2></section>
     </main>
     
 
-    <footer></footer>
+    <footer>
+        <p>© <span id="CurrentYear"></span></p>
+        <p> <script>document.write("Last Modification: " + document.lastModified)</script></p>
+    </footer>
 </body>
 </html>
