@@ -85,10 +85,15 @@ nav ul {
     box-shadow: 0 0 10px;
     background-color:rgb(255, 255, 255);
     
+    
+    
 }
 .location img{
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding: 1rem;
+
 }
 main h3{
     display: flex;
