@@ -83,13 +83,25 @@ const buttons = document.querySelectorAll("#buttons button");
 
 function renderCourses(filtered){
     container.innerHTML = "";
+    const totalCredits = filtered.reduce((accumulator, course) =>{
+        return accumulator + course.credits;
+    }, 0);
+    
+    const creditMessage = document.createElement("message");
+    creditMessage.classList.add("message");
+    creditMessage.textContent = `The total number of course listed below is ${totalCredits}`;
+    container.appendChild(creditMessage);
+    
+    
     filtered.forEach(course =>{
         const div = document.createElement("div");
         div.classList.add("card");
         if (course.completed){
             div.classList.add("completed");
+            
         }
-        div.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        const checkMark = course.completed ? "✔": "";
+        div.innerHTML = `<h3>${course.subject} ${course.number} ${checkMark}</h3>`;
         container.appendChild(div);
     });
 }
@@ -98,9 +110,10 @@ buttons.forEach(button =>{
     button.addEventListener("click", () =>{
         const filter = button.dataset.filter;
         let filtered = [];
-
+        
         if (filter === "all"){
             filtered = courses;
+            
         } else{
             filtered = courses.filter(course =>
                 course.subject.toLowerCase()=== filter
