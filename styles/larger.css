@@ -125,7 +125,15 @@ nav{
     padding: 1rem;
 
 }
+.location img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 400;
+    width: 400;
+    padding: 1rem;
 
+}
 
 
 
