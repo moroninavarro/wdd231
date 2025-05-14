@@ -1,33 +1,49 @@
 async function getProphetData(){
+    
+    const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
     const response = await fetch(url);
     const data = await response.json();
+    //console.table(data.prophets);
     displayProphets(data.prophets);
-
-
+    
+    
 } 
 getProphetData();
 
+
+
 const displayProphets = (prophets) =>{
     prophets.forEach((prophet) =>{
-
-    "prophets"[
-      {
-        "name": "Joseph",
-        "lastname": "Smith",
-        "birthdate": "23 December 1805",
-        "death": "27 June 1844",
-        "length": 14,
-        "order": 1,
-        "birthplace": "Vermont",
-        "numofchildren": 11,
-        "imageurl": "1429d0aa0eeec6e2c74851a4bf4235/nauvoo_temple_joseph_art_lds.jpeg"
-      }
-      ]
+        
+        let card = document.createElement('section');
+        let fullName = document.createElement('h2');
+        let birthdate = document.createElement('p');
+        let birthplace = document.createElement('p');
+        let portrait = document.createElement('img');
+        
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
+        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        portrait.setAttribute('src', prophet.imageurl);
+        
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.birthdate}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
+        
+        card.appendChild(fullName);
+        card.appendChild(birthdate);
+        card.appendChild(birthplace);
+        card.appendChild(portrait);
+        cards.appendChild(card);
+        
     });
 }
 
-
-
-const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
-
 const cards = document.querySelector('#cards');
+
+
+//const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
+
+//const cards = document.querySelector('#cards');
+
