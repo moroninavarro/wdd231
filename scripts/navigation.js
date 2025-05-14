@@ -1,9 +1,9 @@
-const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector('#animateme')
 
 
 
 hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show');
+    mainnav.classList.toggle('open');
+    hambutton.classList.toggle('open');
 });

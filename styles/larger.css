@@ -63,10 +63,21 @@ h1{
 }
 
 
+
 nav{
     background-color:#1a529c;
-    
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
+
+
+nav ul {overflow: hidden;}
+
+nav.open{
+    grid-template-rows: 1fr;
+}
+
 
 .navigation{
     list-style: none;
@@ -79,7 +90,7 @@ nav{
 
 
 .navigation li {
-    display: none;
+    display: block;
 }
 
 .navigation a {
@@ -99,11 +110,11 @@ nav{
 
 
 
-.show li {
+.open li {
     display: block;
 }
 
-#menu.show::before{
+#menu.open::before{
     content: "X";
 }
 
