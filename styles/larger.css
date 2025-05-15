@@ -68,20 +68,26 @@ nav{
     background-color:#1a529c;
     display: grid;
     grid-template-rows: 0fr;
+    
     transition: grid-template-rows 0.5s ease-out;
 }
 
 
-nav ul {overflow: hidden;}
+nav ul {
+    overflow: hidden;
+}
 
 nav.open{
     grid-template-rows: 1fr;
+   
+    
 }
 
 
 .navigation{
     list-style: none;
     margin: 0 auto;
+    padding: 10px;
     max-width: 760px;
     display: block;
     color: #000;
