@@ -1,8 +1,9 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
+const display = document.querySelector("#companies")
 
 gridbutton.addEventListener("click", () =>{
-    display.classList.add("#companies")
+    display.classList.add("grid")
     display.classList.remove("list");
 });
 
@@ -10,7 +11,7 @@ listbutton.addEventListener("click", showList);
 
 function showList(){
     display.classList.add("list")
-    display.classList.remove("#companies");
+    display.classList.remove("grid");
 }
 
 
@@ -39,7 +40,7 @@ const displayCompanies = (companies) =>{
         url.textContent = "Details";
         level.textContent = `Membership Level: ${companie.membershipLevel}`;
         portrait.setAttribute('src', companie.imageurl);
-        
+        portrait.setAttribute('alt', `Portrait of ${companie.name}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
