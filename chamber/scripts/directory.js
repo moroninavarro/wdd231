@@ -13,7 +13,7 @@ getCompanieData();
 
 
 const displayCompanies = (companies) =>{
-    const cards = document.querySelector('#cards');
+    const cards = document.querySelector('#companies');
     companies.forEach((companie) =>{
         
         let card = document.createElement('section');
