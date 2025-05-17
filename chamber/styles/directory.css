@@ -63,7 +63,7 @@
 }
 .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
 
@@ -142,6 +142,8 @@ nav ul {
 }
 
 footer{
+    display: flex;
+    justify-content: space-around;
     background-color:rgb(15, 120, 182);
     padding: 20px;
     text-align: center;
@@ -149,3 +151,11 @@ footer{
     color: white;
 }
 
+.izq{
+    
+    text-align: left;
+}
+
+.der{
+    text-align: right;
+}
