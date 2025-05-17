@@ -12,8 +12,8 @@
         "phoneNumber": "(727) 577-9749",
         "url": "https://www.jabil.mx/contact/location/tijuana.html",
         "imageurl": "https://media.glassdoor.com/l/2330/jabil-office.jpg",
-        "membershipLevel": 1,
-        "other": ""
+        "membershipLevel": 1
+       
     },
      {
         "name": "SAFRAN",
@@ -27,8 +27,8 @@
         "phoneNumber": "52-664-626-0555",
         "url": "https://www.safran-group.com/locations/mexico/safran-cabin-tijuana-2077413",
         "imageurl": "https://tse3.mm.bing.net/th?id=OIP.lBoB7dWbbwuYSI6K7tlBSAHaEr&pid=Api&P=0&h=180",
-        "membershipLevel": 1,
-        "other": ""
+        "membershipLevel": 1
+        
     },
      {
         "name": "HEAROS",
@@ -42,8 +42,8 @@
         "phoneNumber": "844-432-7327",
         "url": "http://www.hearos.com/",
         "imageurl": "https://www.empleonuevo.com/space/public/companies/logos/l1ITJo8EOZdCTGbGOOqUaldR6fJGcont8Z3TCxUo.jpeg",
-        "membershipLevel": 1,
-        "other": ""
+        "membershipLevel": 1
+       
     },
      {
         "name": "JAE",
@@ -57,8 +57,8 @@
         "phoneNumber": "011-52-664-689-7484",
         "url": "https://www.jae.com/en/oregon/corporate/tijuana/information_es/",
         "imageurl": "https://www.industriamaquiladora.com/images/maquiladoras/20210406192420jae_tijuana_2020.jpg",
-        "membershipLevel": 2,
-        "other": ""
+        "membershipLevel": 2
+      
     },
      {
         "name": "TELVISTA",
@@ -70,10 +70,10 @@
             "zip": "22014"
             },
         "phoneNumber": "52 664 622 6800",
-        "url": "www.telvista.com",
+        "url": "https://www.telvista.com",
         "imageurl": "https://iconape.com/wp-content/files/vx/364396/png/364396.png",
-        "membershipLevel": 3,
-        "other": ""
+        "membershipLevel": 3
+       
     },
 
 
@@ -87,10 +87,10 @@
             "zip": "22000"
             },
         "phoneNumber": "52 664 123 4567",
-        "url": "www.farmaciasdesimilares.com.mx",
+        "url": "https://farmaciasdesimilares.com.mx",
         "imageurl": "https://images.rappi.com.mx/marketplace/store_type_1657053639826.png",
-        "membershipLevel": 3,
-        "other": ""
+        "membershipLevel": 3
+     
     },
      {
         "name": "CINEMEX",
@@ -104,11 +104,9 @@
         "phoneNumber": "52 664 625 6769",
         "url": "https://cinemex.com/cartelera/zona-3/tijuana/",
         "imageurl": "https://conexion360.mx/wp-content/uploads/2021/05/FOTO-WEB-CINEMEX-LOGO.jpg",
-        "membershipLevel": 3,
-        "other": ""
+        "membershipLevel": 3
+       
     }
    
-
-
     ]
 }

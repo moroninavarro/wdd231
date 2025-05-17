@@ -6,17 +6,37 @@
     <meta name="author" content="Moroni Alanis Navarro">
 
     <link rel="icon" href="../favicon.ico">
-    <script src= "../scripts/date.js" defer></script>
-    <script src= "scripts/directory.js" defer></script>
 
-    
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <link rel="stylesheet" href="styles/directory-small.css">
+
+    <script src= "scripts/directory.js" defer></script>
+    <script src= "../scripts/navigation.js" defer></script>
+    <script src= "../scripts/date.js" defer></script>
+
+
     <meta property="og:title" content="Chamber Directory Page">
     <meta property="og:description" content="This page is a chamber directory page that will help us to provide a list of local business and organizations that belong to the chamber of commerce.">
     <meta property="og:image" content="https://www.clara.es/medio/2023/08/01/frases-motivadoras-y-de-superacion-personal_811a6c42_230801120819_1200x630.jpg">
     <meta property="og:url" content="https://moroninavarro.github.io/wdd231/chamber/directory.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
+
+    <header>
+        <div class="container">
+        <a id="menu" href="#" aria-label="Open menu"></a> 
+        <img src="images/optimized.jpg" alt="Thats me" height="145">
+        <span>Moroni A. Navarro</span>
+        </div>
+        
+    </header>
       <nav id="animateme">
             <ul class="navigation">
                 <li><a href="../index.html" id="home">Home</a></li>
@@ -25,13 +45,15 @@
                 <li><a href="directory.html" id="discover">Discover</a></li>
                 
             </ul>
+            
+        </nav>
         
-    </nav>
+        <main>
+            <div id="cards"></div>
+        </main>
 
 
-    <main>
-        <div id=""></div>
-    </main>
+
     <footer>
          <p class="first">© <span id="CurrentYear"></span> 🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico 🌮</p>
         <p class="second">Last Update: <span id="lastModified"></span></p>
