@@ -2,6 +2,18 @@
     font-family: "Quattrocento", serif;
     
 }
+.prove{
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: center;
+}
+
+.prove button{
+    padding: 1rem;
+    font-weight: 700;
+}
 
 body{
     background-color: white;
