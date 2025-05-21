@@ -1,0 +1,28 @@
+*{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    
+}
+h1{
+    font-size: 40px;
+}
+
+h2,h3,p, figure{
+    font-size: 30px;
+    box-shadow: rgb(128, 128, 91);
+    border: rgb(182, 123, 123);
+}
+
+.card{
+    border: 1px solid #5d6f67;
+    border-radius: 10px;
+    box-shadow: rgb(128, 128, 91);
+    background-color: rgb(177, 177, 143);
+}
+
+.card #description{
+    text-transform: capitalize;
+    color: #523500;
+    margin: .3rem 0;
+}
