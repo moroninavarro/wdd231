@@ -143,11 +143,12 @@ h2,h3,p, figure{
     box-shadow: rgb(128, 128, 91);
     border: rgb(182, 123, 123);
 }
-
+/*THE CARD PLACE*/
 .card{
-    display: flex;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 2fr ;
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
     
   
 }
@@ -156,6 +157,8 @@ h2,h3,p, figure{
     text-transform: capitalize;
     color: #523500;
     margin: .3rem 0;
+
+    
 }
 
 
@@ -171,37 +174,57 @@ h2{
 }
 .event{
      display: grid;
-    grid-column: 2/1;
-    margin: 20px;
+    
+    
     border:#1a529c;
     border-radius: 8px;
-    
+   
     
     box-shadow: 0 0 10px;
     background-color:rgb(255, 255, 255);
+
+    
 }
 .weather{
     display: grid;
-    grid-column: 2/1;
-    margin: 20px;
+    grid-column: 2/2;
+    
     border:#1a529c;
     border-radius: 8px;
-    
-    
     box-shadow: 0 0 10px;
     background-color:rgb(255, 255, 255);
 }
-.contenedor{
+ h3{
     display: grid;
-    grid-column: 2/1;
-    margin: 20px;
+    justify-content: center;
+}
+#weather-icon{
+     display: grid;
+    justify-content: center;
+}
+
+
+figure, p{
+    display: grid;
+    justify-content:center;
+    font-size: 25px;
+    margin: .3rem 0;
+}
+
+
+.forecast{
+   
+    display: grid;
+   
     border:#1a529c;
     border-radius: 8px;
     
     
     box-shadow: 0 0 10px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(233, 233, 233);
 }
+
+/**/
 .hero{
     position: relative;
     
