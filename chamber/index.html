@@ -13,7 +13,8 @@
         
         <link rel="stylesheet" href="styles/index-small.css">
         
-        <script src= "scripts/directory.js" defer></script>
+        <script src= "scripts/index-directory.js" defer></script>
+
         <script src= "../scripts/navigation.js" defer></script>
         <script src= "../scripts/date.js" defer></script>
         
@@ -34,7 +35,7 @@
         <header>
             <div class="container">
                 <a id="menu" href="#" aria-label="Open menu"></a> 
-                <img src="images/" alt="chamber" height="145">
+                <img src="images/team.jpg" alt="chamber" height="145">
                 <span>Progress Chamber of Commerce</span>
             </div>
             
@@ -50,14 +51,54 @@
             
         </nav>
         
+        
+        <section class="hero">  
+        <img src="images/team.jpg" alt="team" class="heroimage">
+        </section>
+
+
         <main>
             <h1>Directory Chamber of Commerce</h1>
-            <div class="prove">
-                <button id="grid">⏹️ Grid</button>
-                <button id="list">📄List</button>
-            </div>
-            <div id="companies" class="grid"></div>
+            <div class="card">
             
+            <div class="event">
+                <h2>Weather Forecast</h2>
+                <figure>
+                    <!-- lo tendre que hacer en javascript seguramente-->
+                    <h3>Today: </h3>
+                    <h3>Today: </h3>
+                    <h3>Today: </h3>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+
+            <div class="weather">
+
+                <h2 id="town"></h2>
+                <p>The <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <h3 id="description"></h3>
+                    <figcaption></figcaption>
+                </figure>
+
+            </div>
+
+            <div class="contenedor">
+                <h2>Weather Forecast</h2>
+                <figure>
+                    <!-- lo tendre que hacer en javascript seguramente-->
+                    <h3>Today: </h3>
+                    <h3>Today: </h3>
+                    <h3>Today: </h3>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+            <div id="companies" class="grid"></div>
+        
+
         </main>
         
         
@@ -75,5 +116,6 @@
             <p>(664)-369-52-60</p>
             </div>
         </footer>
+        <script src="scripts/index.js"></script>
     </body>
 </html>

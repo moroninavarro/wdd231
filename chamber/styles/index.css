@@ -5,7 +5,9 @@
 
 
 h1{
-    text-align: center;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
     }
 
 .prove{
@@ -164,4 +166,84 @@ footer{
 
 .der{
     text-align: right;
+}
+
+/**/
+
+
+h2,h3,p, figure{
+    font-size: 30px;
+    box-shadow: rgb(128, 128, 91);
+    border: rgb(182, 123, 123);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 2fr ;
+    
+  
+}
+
+.card #description{
+    text-transform: capitalize;
+    color: #523500;
+    margin: .3rem 0;
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: #1a529c;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 1px;
+}
+.event{
+     display: grid;
+    grid-column: 2/1;
+    margin: 20px;
+    border:#1a529c;
+    border-radius: 8px;
+    
+    
+    box-shadow: 0 0 10px;
+    background-color:rgb(255, 255, 255);
+}
+.weather{
+    display: grid;
+    grid-column: 2/1;
+    margin: 20px;
+    border:#1a529c;
+    border-radius: 8px;
+    
+    
+    box-shadow: 0 0 10px;
+    background-color:rgb(255, 255, 255);
+}
+.contenedor{
+    display: grid;
+    grid-column: 2/1;
+    margin: 20px;
+    border:#1a529c;
+    border-radius: 8px;
+    
+    
+    box-shadow: 0 0 10px;
+    background-color:rgb(255, 255, 255);
+}
+.hero{
+    position: relative;
+    
+}
+
+.heroimage{
+    display: grid;
+    justify-content: center;
+    width: 1600px;
+    height: 500px;
+    
 }
