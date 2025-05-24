@@ -20,7 +20,13 @@ function showList(){
 
 const displayCompanies = (companies) =>{
     const cards = document.querySelector('#companies');
-    companies.forEach((companie) =>{
+    cards.innerHTML = "";
+
+    const shuffled = companies.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0,3);
+
+
+    selected.forEach((companie) =>{
         
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
