@@ -220,9 +220,30 @@ main p{
     position: relative;
     padding: 5rem;
     margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.hero li{
+    text-align: right;
+    list-style: none;
+}
+#joined{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: rgb(48, 49, 49);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
     
 }
 
+
+#joined:hover{
+    background-color: #ad1b1b;
+    cursor: pointer;
+}
 .heroimage{
     display: flex;
     justify-content: center;
