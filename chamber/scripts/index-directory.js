@@ -6,8 +6,12 @@ const displayCompanies = (companies) =>{
     const cards = document.querySelector('#companies');
     cards.innerHTML = "";
 
-    const shuffled = companies.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0,3);
+    const filtered = companies.filter(company =>
+        company.membershipLevel === 2 || company.membershipLevel === 3
+    );
+
+    const shuffled = filtered.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 3);
 
 
     selected.forEach((companie) =>{
