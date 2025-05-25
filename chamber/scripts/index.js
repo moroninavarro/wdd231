@@ -16,7 +16,7 @@ const myKey = "eb6ecc77be33fcafe663f61da64e45d5"
 const myLat = 32.5323;
 const myLong = -117.01706;
 
-const url = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}`
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}`
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
@@ -83,7 +83,7 @@ function displayResults(data) {
     myTown.innerHTML = data.name
     myDesc.innerHTML = data.weather[0].description
     currentTemp.innerHTML= `${data.main.temp}&deg;F`
-    const iconsrc = ` https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('SRC', iconsrc)
     weatherIcon.setAttribute('alt', data.weather[0].description)
 
