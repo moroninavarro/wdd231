@@ -1,0 +1,255 @@
+*{
+    font-family: "Quattrocento", serif;
+    
+}
+
+
+h1{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.grid section{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0/ 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid section > * {
+    margin: 0.1rem;
+}
+
+
+.grid section > p {
+    min-height: 60px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.grid img{
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #111;
+}
+.grid a{
+    min-height: 60px;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+
+
+
+
+/**/
+
+
+
+
+ /**/
+body{
+    background-color: white;
+}
+
+header{
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #1a529c;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+   
+}
+.container img{
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    padding: 10px;
+}
+.container span{
+    display: flex;
+    justify-content: left;
+    margin: 60px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+.navigation a:hover, navigation a:active {
+    color: rgb(192, 77, 77);
+}
+.navigation a {
+    display: flex;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.navigation li {
+     margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(15, 120, 182);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.izq{
+    
+    text-align: left;
+}
+
+.der{
+    text-align: right;
+}
+
+/**/
+
+
+h2,h3,p, figure{
+    font-size: 30px;
+    border: rgb(182, 123, 123);
+}
+/*THE CARD PLACE*/
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.title, .titleone, #forecast{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    flex:2;
+}
+
+.titleone, #forecast{
+    flex: 1;
+}
+
+
+.card #description{
+    text-transform: capitalize;
+    color: #523500;
+    margin: .3rem 0;
+
+    
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: #1a529c;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    
+}
+.event, .weather, .forecast{
+
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    height: 85%;
+}
+ h3{
+    display: grid;
+    justify-content: center;
+}
+#weather-icon{
+     display: grid;
+    justify-content: center;
+}
+
+
+main p{
+    display: grid;
+    justify-content:center;
+    font-size: 25px;
+    margin: .3rem 0;
+}
+
+
+
+
+/**/
+.hero{
+    position: relative;
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.hero li{
+    text-align: right;
+    list-style: none;
+}
+#joined{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: rgb(48, 49, 49);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+#joined:hover{
+    background-color: #ad1b1b;
+    cursor: pointer;
+}
+.heroimage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
