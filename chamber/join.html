@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Join Page Chamber of Commerce</title>
+        <title>Join</title>
         <meta name="description" content="This page is a chamber directory page that will help us to provide a list of local business and organizations that belong to the chamber of commerce.">
         <meta name="author" content="Moroni Alanis Navarro">
         
@@ -34,7 +34,7 @@
         <header>
             <div class="container">
                 <a id="menu" href="#" aria-label="Open menu"></a> 
-                <img src="images/" alt="chamber" height="100">
+                <img src="images/team.jpg" alt="chamber" height="100">
                 <span>Progress Chamber of Commerce</span>
             </div>
             
@@ -52,10 +52,29 @@
 
         
         <main>
-            <h1>Join Page Chamber of Commerce</h1>
+            <h1>Join</h1>
 
             <form method="GET"  action="thanks.html"></form>
+            <label> First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+
+            <label> Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+
+            <label> Title <input type="text" name="title" title="Your organizational title" autocomplete="organization-title" pattern=""></label>
+        
+            <label> Email <input type="email" name="email" required placeholder="something123@gmail.com" title="Your Email" autocomplete="email"></label>
+            
+            <label> Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="664-369-52-60"></label>
+            
+            <label> Organization <input type="text" name="organization" required autocomplete="given-name" title="Business Organization"></label>
            
+            <label> Business Description <input type="text" name="Description" title="Business Description"></label>
+
+            <h3>MEMBERSHIP LEVEL</h3>
+            <label> <input type="radio" name="NP" value="NP"> NP Membership</label>
+            <label> <input type="radio" name="Bronze" value="Bronze"> Bronze Membership</label>
+            <label> <input type="radio" name="Silver" value="Silver"> Silver Membership</label>
+            <label> <input type="radio" name="Gold" value="Gold"> Gold Membership</label>
+            <input type="submit" value="Submit">
         </main>
         
         
