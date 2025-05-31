@@ -129,8 +129,21 @@ h2{
     padding: 1rem;
     background: rgba(29, 116, 7, 0.473);
     border-radius: 10px;
-
+    animation-duration: 1s;
+    animation-name: slide-in;
 }
+
+@keyframes slide-in{
+    from{
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
 button{
     
     padding: .5rem;
