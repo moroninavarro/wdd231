@@ -176,8 +176,8 @@ form{
     }
 
     h3{
-        font-size: .9rem;
-        color: #E07A5F;
+        font-size: 20px;
+        color: #d62e00;
         margin: 1.5rem 0 .2rem 0;
         border-bottom: 1px solid #eee;
     }
@@ -190,14 +190,14 @@ form{
     select{
         display: block;
         margin: .1rem 0 1rem 0 ;
-        padding: .3rem;
+        padding: .7rem;
         border: 1px solid #999;
         border-radius: 4px;
         border-left-width: 5px;
         border-left-color: #555;
         font-size: 1rem;
         color: #3D405B;
-        width: 250px;
+        width: 450px;
 
     }
 

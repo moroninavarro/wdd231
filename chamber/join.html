@@ -62,7 +62,7 @@
 
             <label> Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
 
-            <label> Title <input type="text" name="title" autocomplete="organization-title" required pattern="(?=.*[A-Za-z])[A-Za-z\s-]{7,}" title="Use only letters, spaces with minimum of 7 characters"></label>
+            <label> Title <input type="text" name="title" autocomplete="organization-title" required pattern="[A-Za-z\s-]{7,}" title="Use only letters, spaces with minimum of 7 characters"></label>
         
             <label> Email <input type="email" name="email" required placeholder="something123@gmail.com" title="Your Email" autocomplete="email"></label>
             
@@ -73,6 +73,8 @@
             <label> Business Description <textarea name="description" title="Business Description"></textarea></label>
             <label> <input type="hidden" name="timestamp" id="timestamp"></label>
             
+
+
             <h3>MEMBERSHIP LEVEL</h3>
             <label> <input type="radio" name="membership" value="NP"> NP Membership</label>
             <label> <input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
@@ -80,15 +82,15 @@
             <label> <input type="radio" name="membership" value="Gold"> Gold Membership</label>
 
             <input type="submit" value="Join Now">
-            </div>
         </form>
+    </div>
         
         <div class="level"> 
                 <h2>Membership Levels</h2>
-                <article class="card"> <h4>Non Profit Membership Level</h4><button onclick="openModal('Non Profit Membership its more basic')">LEARN MORE</button></article>
-                <article class="card"> <h4>Bronze Membership Level  </h4><button onclick="openModal('This membership will be for pros')">LEARN MORE</button></article>
-                <article class="card"> <h4> Silver Membership Level </h4><button onclick="openModal('If you select this option, you will be handsome')">LEARN MORE</button></article>
-                <article class="card"> <h4>Gold Membership Level  </h4><button onclick="openModal('This membership level will gave you good luck')">LEARN MORE</button></article>
+                <article class="card"> <h4>Non Profit Membership Level</h4><button onclick="openModal('NP Membership is for non profit organizations and there is no fee.')">LEARN MORE</button></article>
+                <article class="card"> <h4>Bronze Membership Level  </h4><button onclick="openModal('This membership level will allow you to have more benefits and few discounts.')">LEARN MORE</button></article>
+                <article class="card"> <h4> Silver Membership Level </h4><button onclick="openModal('As a Silver Member you will receive exclusive rewards.')">LEARN MORE</button></article>
+                <article class="card"> <h4>Gold Membership Level  </h4><button onclick="openModal('As a Gold Member you have access to all benefits and priority,')">LEARN MORE</button></article>
             </div>
             <dialog id="theDetails">
                 <button id="closeModal">❌</button>
