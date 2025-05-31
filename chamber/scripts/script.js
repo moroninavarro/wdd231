@@ -14,8 +14,10 @@ const myInfo = new URLSearchParams(window.location.search);
 document.querySelector('#results').innerHTML = `
 <p>Thank you for join us our organization, your information has been successfully received, now you are a new member.</p>
 <p>Welcome ${myInfo.get('first')} ${myInfo.get('last')}</p>
+<p>This is the information we received:</p>
 <p>Email: ${myInfo.get('email')}</p> 
 <p>Phone: ${myInfo.get('phone')}</p>
 <p>Business Name: ${myInfo.get('organization')}</p>
 <p>Time: ${myInfo.get('timestamp')}</p>
+<p>As a new member you will receive information from our team to contact you, please check your email.</p>
 `
