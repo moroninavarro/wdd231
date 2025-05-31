@@ -128,13 +128,25 @@ h2{
     box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background: rgba(29, 116, 7, 0.473);
+    border-radius: 10px;
 
 }
 button{
+    
     padding: .5rem;
     margin: 1rem;
     background-color: rgb(230, 219, 219);
+    border-radius: 50px;
 }
+
+
+.level button{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+
 button:hover{
     background-color: rgba(187, 30, 64, 0.644);
     cursor: pointer;
@@ -147,6 +159,7 @@ dialog {
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
+    border-radius: 10px;
     width: 90%;
     max-width: 600px;
 }
