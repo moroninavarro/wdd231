@@ -71,6 +71,8 @@
             <label> Organization <input type="text" name="organization" required autocomplete="given-name" title="Business Organization"></label>
            
             <label> Business Description <textarea name="description" title="Business Description"></textarea></label>
+            
+            
             <label> <input type="hidden" name="timestamp" id="timestamp"></label>
             
 
@@ -83,6 +85,15 @@
 
             <input type="submit" value="Join Now">
         </form>
+
+        <script> document.addEventListener('DOMContentLoaded', () =>{
+            const timestampInput = document.getElementById('timestamp');
+            const now = new Date();
+
+            timestampInput.value = now.toLocaleString();
+
+        });</script>
+
     </div>
         
         <div class="level"> 

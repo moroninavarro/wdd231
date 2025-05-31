@@ -18,6 +18,6 @@ document.querySelector('#results').innerHTML = `
 <p>Email: ${myInfo.get('email')}</p> 
 <p>Phone: ${myInfo.get('phone')}</p>
 <p>Business Name: ${myInfo.get('organization')}</p>
-<p>Time: ${myInfo.get('timestamp')}</p>
+<p>Your registration was recorded on ${myInfo.get('timestamp')}</p>
 <p>As a new member you will receive information from our team to contact you, please check your email.</p>
 `
