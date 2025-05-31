@@ -86,18 +86,23 @@ footer{
     text-align: right;
 }
 
-/**/
+/*         */
+
+
+
 
 h3{
    text-align: left;
 }
 
 
-
+main{
+    display: flex;
+}
 .datos{
-    
-    display: grid;
-    justify-content: left;
+   padding: 2px;
+   margin: 2rem;
+    width: 40%;
 }
 
 .datos label{
@@ -106,10 +111,34 @@ h3{
 }
 
 .level{
-    display: grid;
-    justify-content: right;
-    text-align: right;
+    margin: 2rem 2%;
+    padding: 2rem;
+    width: 60%;
 }
+
+.card{
+    display: grid;
+    width: 100%;
+    max-width: 700px;
+    font-size: 23px;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: rgba(29, 116, 7, 0.473);
+
+}
+button{
+    padding: .5rem;
+    margin: 1rem;
+    background-color: rgb(230, 219, 219);
+}
+button:hover{
+    background-color: rgba(187, 30, 64, 0.644);
+    cursor: pointer;
+}
+
 
 form{
     margin: 1rem 2%;
@@ -163,6 +192,10 @@ form{
         -webkit-appearance: none;
         appearance: none;
     }
+    input[type=submit]:hover{
+    background-color: rgba(187, 30, 64, 0.644);
+    cursor: pointer;
+}
 }
 input:webkit-autofill{
     -webkit-text-fill-color: #3D405B;
@@ -174,7 +207,10 @@ input:webkit-autofill{
     padding: 0 1rem;
     border: 1px solid #da7a60;
     border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
 }
+
 
 
 

@@ -50,16 +50,19 @@
             
         </nav>
 
-        
+       
         <main>
             <h1>Join</h1>
+            
             <div class="datos"> 
             <form method="GET"  action="thanks.html"> 
+
+            <h2>Membership Application Form</h2>
             <label> First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
 
             <label> Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
 
-            <label> Title <input type="text" name="title" title="Your organizational title" autocomplete="organization-title"></label>
+            <label> Title <input type="text" name="title" autocomplete="organization-title" required pattern="(?=.*[A-Za-z])[A-Za-z\s-]{7,}" title="Use only letters, spaces with minimum of 7 characters"></label>
         
             <label> Email <input type="email" name="email" required placeholder="something123@gmail.com" title="Your Email" autocomplete="email"></label>
             
@@ -68,19 +71,29 @@
             <label> Organization <input type="text" name="organization" required autocomplete="given-name" title="Business Organization"></label>
            
             <label> Business Description <input type="text" name="description" title="Business Description"></label>
+            <label> <input type="hidden" name="timestamp" id="timestamp"></label>
             
             <h3>MEMBERSHIP LEVEL</h3>
-            <label> <input type="radio" name="NP" value="NP"> NP Membership</label>
-            <label> <input type="radio" name="Bronze" value="Bronze"> Bronze Membership</label>
-            <label> <input type="radio" name="Silver" value="Silver"> Silver Membership</label>
-            <label> <input type="radio" name="Gold" value="Gold"> Gold Membership</label>
+            <label> <input type="radio" name="membership" value="NP"> NP Membership</label>
+            <label> <input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+            <label> <input type="radio" name="membership" value="Silver"> Silver Membership</label>
+            <label> <input type="radio" name="membership" value="Gold"> Gold Membership</label>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Join Now">
             </div>
-            </form>
-
-            <div class="level"> 
-                <p>This is just a prove</p>
+        </form>
+        
+        <div class="level"> 
+                <h2>Membership Levels</h2>
+                <article class="card"> <h4>Non Profit Membership Level</h4>
+                     <button onclick="toggleDetails('gold')">LEARN MORE</button>
+                    <div id="gold" class="details">
+                        <p>Premium benefits, 24/7 support and exclusive offers.</p>
+                    </div>
+                    </article>
+                <article class="card">Bronze Membership Level <button>LEARN MORE</button></article>
+                <article class="card">Silver Membership Level <button>LEARN MORE</button></article>
+                <article class="card">Gold Membership Level <button>LEARN MORE</button></article>
             </div>
         </main>
         
@@ -99,6 +112,6 @@
                 <p>(664)-369-52-60</p>
             </div>
         </footer>
-        
+        <script src="scripts/join.js"></script>
     </body>
 </html>

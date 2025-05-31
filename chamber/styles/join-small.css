@@ -131,28 +131,5 @@ nav.open{
 
 /* */
   
-
-
-
-
-
-
-
-
-.card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
-     
-}
-.event, .weather, .forecast{
-    display: grid;
-    background-color: #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    height: 85%;
-}
-
 }
 
