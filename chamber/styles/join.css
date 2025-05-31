@@ -236,9 +236,7 @@ form{
     cursor: pointer;
 }
 }
-input:webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
-}
+
 
 
 #results{
