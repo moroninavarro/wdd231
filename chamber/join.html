@@ -85,17 +85,16 @@
         
         <div class="level"> 
                 <h2>Membership Levels</h2>
-                <article class="card"> <h4>Non Profit Membership Level</h4>
-                     <button onclick="toggleDetails('gold')">LEARN MORE</button>
-                    <div id="gold" class="details">
-                        <p>Premium benefits, 24/7 support and exclusive offers.</p>
-                    </div>
-                    </article>
-
-                <article class="card"> <h4>Bronze Membership Level  </h4><button>LEARN MORE</button></article>
-                <article class="card"> <h4> Silver Membership Level </h4><button>LEARN MORE</button></article>
-                <article class="card"> <h4>Gold Membership Level  </h4><button>LEARN MORE</button></article>
+                <article class="card"> <h4>Non Profit Membership Level</h4><button onclick="openModal('Non Profit Membership its more basic')">LEARN MORE</button></article>
+                <article class="card"> <h4>Bronze Membership Level  </h4><button onclick="openModal('This membership will be for pros')">LEARN MORE</button></article>
+                <article class="card"> <h4> Silver Membership Level </h4><button onclick="openModal('If you select this option, you will be handsome')">LEARN MORE</button></article>
+                <article class="card"> <h4>Gold Membership Level  </h4><button onclick="openModal('This membership level will gave you good luck')">LEARN MORE</button></article>
             </div>
+            <dialog id="theDetails">
+                <button id="closeModal">❌</button>
+                <h2>Membership Info</h2>
+                <p id="modal-info"></p>
+            </dialog>
         </main>
         
         
