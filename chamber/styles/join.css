@@ -100,6 +100,12 @@ main{
     
 }
 
+.secondmain{
+    display: flex;
+    
+    margin: 0 auto;
+}
+
 h2{
     color: rgb(62, 147, 196);
 }
@@ -116,9 +122,9 @@ h2{
 
 .level{
     margin: 3rem 2%;
-    padding: 40px;
-    width: 60%;
-   
+    padding: 30px;
+    width: 80%;
+    margin-right: 10rem;
 }
 
 .card{
@@ -198,6 +204,7 @@ dialog button{
 form{
     margin: 3rem 2%;
     padding: 2px;
+    margin-right: 4rem;
 }
 
 form label{
