@@ -6,8 +6,10 @@
 
 h1{
     text-align: left;
-    padding: 10px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    position: absolute;
+
     }
 
 body{
@@ -95,6 +97,7 @@ footer{
 
 main{
     display: flex;
+    
 }
 
 h2{
@@ -112,9 +115,10 @@ h2{
 }
 
 .level{
-    margin: 2rem 2%;
-    padding: 2rem;
+    margin: 3rem 2%;
+    padding: 40px;
     width: 60%;
+   
 }
 
 .card{
@@ -192,8 +196,8 @@ dialog button{
 
 
 form{
-    margin: 1rem 2%;
-    padding: 1rem;
+    margin: 3rem 2%;
+    padding: 2px;
 }
 
 form label{
