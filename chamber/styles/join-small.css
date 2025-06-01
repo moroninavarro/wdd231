@@ -38,8 +38,10 @@ img{
 h1{
     display: flex;
     grid-gap: 1rem;
-    padding: 20px;
+    padding: 2px;
+    margin: 1rem;
     color: white;
+    position: absolute;
 }
 
 
