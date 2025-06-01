@@ -1,5 +1,7 @@
 @media (max-width:640px){
 
+
+
 header{
     display: flex;
     justify-content:flex-end;
@@ -9,9 +11,7 @@ header{
     background-color: #1a529c;
 }
 
-header, main {
-    margin: 0 auto;
-}
+
 img{
     display: flex;
     justify-content: left;
@@ -132,10 +132,28 @@ nav.open{
 /********** */
 
 /* */
-  main{
-    display: grid;
+html, body{
+    overflow-x: hidden;
 }
-
+main{
+    display: grid;
+    margin: 0 auto;
+}
+.secondmain{
+    display: grid;
+    margin: 0 auto
+}
+.level{
+    position: relative;
+    left: -40px;
+}
+.card{
+    width: 100%;
+    padding: 1rem;
+    margin:1rem;
+    max-width: 400px;
+   
+}
 form{
     margin: 1rem 2%;
     padding: 1rem;
