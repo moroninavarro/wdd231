@@ -1,5 +1,9 @@
 @media only screen and (min-width: 700px){
 
+img:hover{
+    box-shadow: 0 0 50px #000000;
+    opacity: .5;
+}
 
 header{
     align-items: center;
