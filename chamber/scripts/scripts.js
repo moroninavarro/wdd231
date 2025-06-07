@@ -20,7 +20,7 @@ function displayItems(places){
         thetitle.innerHTML = x.name
         thecard.appendChild(thetitle)
 
-        const theaddress = document.createElement('address')
+        const theaddress = document.createElement('h2')
         theaddress.innerHTML = x.theaddress
         thecard.appendChild(theaddress)
 

@@ -1,8 +1,55 @@
-@media (max-width:640px){
+
+main h1{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+    }
+
+
+ /**/
+body{
+    background-color: white;
+    font-family: "Quattrocento", serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+
+
+*/
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a:hover, navigation a:active {
+    color: rgb(192, 77, 77);
+}
+
+.navigation{
+   display: none;
+}
+
+nav.open .navigation{
+    display: block;
+}
+
+
+.navigation li {
+     margin-right: 10px;
+    
+}
 
 header{
     display: flex;
-    justify-content:flex-end;
+    justify-content:center;
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -31,10 +78,7 @@ img{
     color: white;
 }
 
-.navigation a {
-    margin-right: 0px;
-    
-}
+
 h1{
     display: flex;
     grid-gap: 1rem;
@@ -83,8 +127,9 @@ nav.open{
     
 }
 
-
+/*
 .navigation{
+    display: none;
     list-style: none;
     margin: 0 auto;
     padding: 10px;
@@ -93,7 +138,10 @@ nav.open{
     color: #000;
     background-color:#1a529c ;
 }
-
+*/
+nav.open .navigation{
+    display: block;
+}
 
 .navigation li {
     display: block;
@@ -125,5 +173,79 @@ nav.open{
 }
 
 
+/* Aggregate things */
 
+
+h2{
+    display: flex;
+    justify-content: center;
+    
+    color: black;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    
+}
+
+
+
+main p{
+    display: grid;
+    justify-content:center;
+    font-size: 25px;
+    margin: .3rem 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+#allplaces div{
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "address";
+
+}
+
+#allplaces div h2{
+    margin: 1rem 10px;
+}
+
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#allplaces div p{
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(15, 120, 182);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
