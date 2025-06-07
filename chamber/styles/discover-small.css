@@ -210,8 +210,8 @@ main p{
 
     display: grid;
     grid-template-areas: 
-    "name"
     "photograph"
+    "name"
     "description"
     "address";
 
