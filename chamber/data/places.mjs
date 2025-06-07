@@ -1,62 +1,63 @@
 export const places = [
   {
-    "name": "KatRank Digital Marketing Agency",
-    "address": "Tijuana, Baja California",
-    "description": "Specializes in advanced SEO and Google Ads strategies to boost visibility and sales for local businesses.",
-    "url": "photo-teatro-amazonas.webp"
+    "name": "Emerald Lake",
+    "address": "British Columbia, Canada",
+    "description": "A stunning glacial lake known for its vibrant turquoise waters and scenic mountain backdrop.",
+    "url": "prueba1.webp"
   },
   {
-    "name": "RPC Powder Coating",
-    "address": "Tijuana, Baja California",
-    "description": "Offers powder coating, liquid painting, and metalwork services, providing finishing and structural solutions.",
-    "url": "https://www.conectapyme.com/ubicacion/baja-california/tijuana/"
+    "name": "Mount Fuji Viewpoint",
+    "address": "Honshu, Japan",
+    "description": "A breathtaking viewpoint offering clear vistas of Mount Fuji, especially spectacular during cherry blossom season.",
+    "url": "prueba2.webp"
   },
   {
-    "name": "International Manufacturing & Assembly (IMA)",
-    "address": "Tijuana, Baja California",
-    "description": "Provides manufacturing and assembly services for various industries with facilities in Tijuana and an office in La Jolla, CA.",
-    "url": "https://www.conectapyme.com/ubicacion/baja-california/tijuana/"
+    "name": "Torres del Paine National Park",
+    "address": "Patagonia, Chile",
+    "description": "A majestic national park featuring jagged peaks, glaciers, and deep blue lakes in the heart of Patagonia.",
+    "url": "prueba3.webp"
   },
   {
-    "name": "Imprenta Victoria",
-    "address": "Av. Aguascalientes 2332-Local 1, Col. Madero (Cacho), 22040 Tijuana",
-    "description": "Digital printing services, graphic design, and special finishes — known for quality and customer care.",
-    "url": "https://imprentafacil.com.mx/tijuana/"
+    "name": "Lavender Fields",
+    "address": "Provence, France",
+    "description": "Endless rows of vibrant lavender fields that bloom in summer, creating a sea of purple under the sun.",
+    "url": "prueba4.webp"
   },
   {
-    "name": "CARDCITY ID Card Printing",
-    "address": "Cristóbal Colón and/or Av. H & Baja California, Zona Nte., 22000 Tijuana",
-    "description": "Specializes in printing personalized ID cards, consumables supply, and printer maintenance.",
-    "url": "https://imprentafacil.com.mx/tijuana/"
+    "name": "Salar de Uyuni",
+    "address": "Potosí, Bolivia",
+    "description": "The world's largest salt flat, famous for its mirror-like reflections during the rainy season.",
+    "url": "prueba5.webp"
   },
   {
-    "name": "Garage Photostudio",
-    "address": "Prol. Aguascalientes 7A-1, Privada de los Bungalows de Agua Caliente, 22410 Tijuana",
-    "description": "Professional photo studio offering wedding photography, drone sessions, and commercial photo services.",
-    "url": "https://empresas10.com/mexico/tijuana/constructoras-en-tijuana.php"
+    "name": "Plitvice Lakes National Park",
+    "address": "Croatia",
+    "description": "A lush park filled with cascading waterfalls, turquoise lakes, and wooden boardwalk trails.",
+    "url": "prueba6.webp"
   },
   {
-    "name": "Constructora Cadena",
-    "address": "Blvd. Agua Caliente #8470, Zona Centro, 22000 Tijuana",
-    "description": "Company dedicated to construction and real estate development projects.",
-    "url": "https://empresas10.com/mexico/tijuana/constructoras-en-tijuana.php"
+    "name": "Banff National Park",
+    "address": "Alberta, Canada",
+    "description": "A mountainous sanctuary known for its emerald lakes, glacier peaks, and abundant wildlife.",
+    "url": "prueba7.webp"
   },
   {
-    "name": "Desarrollos Natura",
-    "address": "Corredor Tijuana - Rosarito 2000, Natura Sección Bosques, 22165 Tijuana",
-    "description": "Real estate developer focused on sustainable and high-quality residential projects.",
-    "url": "https://empresas10.com/mexico/tijuana/constructoras-en-tijuana.php"
+    "name": "Cliffs of Moher",
+    "address": "County Clare, Ireland",
+    "description": "Dramatic sea cliffs offering panoramic views over the Atlantic Ocean and Irish countryside.",
+    "url": "prueba8.webp"
   },
   {
-    "name": "Miniva Arquitectos - Construction Firm",
-    "address": "Braulio Maldonado 507, Soler, 22530 Tijuana",
-    "description": "Architecture and construction firm offering comprehensive design-to-build services.",
-    "url": "https://empresas10.com/mexico/tijuana/constructoras-en-tijuana.php"
+    "name": "Namib Desert Dunes",
+    "address": "Namibia",
+    "description": "Vast, red sand dunes that rise dramatically against the deep blue sky, especially stunning at sunrise.",
+    "url": "prueba9.webp"
   },
   {
-    "name": "Telvista",
-    "address": "Tijuana, Baja California",
-    "description": "Mexican company offering customer service and technical support with national and international operations.",
-    "url": "https://es.wikipedia.org/wiki/Telvista"
+    "name": "Hallstatt Village",
+    "address": "Salzkammergut, Austria",
+    "description": "A picturesque lakeside village nestled between the Alps and Hallstätter See, known for its charm and serenity.",
+    "url": "prueba10.webp"
   }
 ]
+
