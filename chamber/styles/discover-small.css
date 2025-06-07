@@ -127,18 +127,8 @@ nav.open{
     
 }
 
-/*
-.navigation{
-    display: none;
-    list-style: none;
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 760px;
-    display: block;
-    color: #000;
-    background-color:#1a529c ;
-}
-*/
+
+
 nav.open .navigation{
     display: block;
 }
