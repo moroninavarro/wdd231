@@ -41,22 +41,25 @@ function displayItems(places){
 
 displayItems(places)
 
-function visitas() {
-    let visit = localStorage.getItem('visit');
 
-    if (visit === null){
-        alert(`Welcome! Let us know if you have any questions.`);
-        visit = 1;
+
+function visitas() {
+    const lastdate = localStorage.getItem('last');
+
+    if (lastdate){
+        const now = new Date();
+        const last = new Date(lastdate);
+
+
+        const difference = now - last;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+
+        alert(`"You last visited ${days} days ago.`)
     }
     else{
-        visit = parseInt(visit) + 1;
-        alert(`This is your visit number ${visit}. Back so soon! Awesome!`);
+        alert(`WELCOME.`);
     }
-
-    localStorage.setItem('visit', visit);
-
-
+    localStorage.setItem('last', new Date().toISOString());
 }
-
 window.onload = visitas;
-
