@@ -1,0 +1,16 @@
+@media only screen and (min-width: 820px){
+
+
+    #allapartments div{
+  
+    grid-template-areas: 
+    "url name"
+    "url description"
+    "url address"
+    "url price";
+    }
+
+    #allapartments div img{
+        width: 300px;
+    }
+} 
