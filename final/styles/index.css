@@ -142,6 +142,11 @@ nav ul {
 
 
 /*Second part*/
+h1{
+    padding: 10px;
+}
+
+
 h2{
     display: flex;
     justify-content: center;
