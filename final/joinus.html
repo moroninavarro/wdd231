@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the final page, ">
+    <meta name="author" content="Moroni Alanis Navarro">
+
+
+    <link rel="icon" href="../favicon.ico">
+
+   <link rel="stylesheet" href="styles/joinus.css">
+
+
+    <script src= "scripts/navigation.js" defer></script>
+    <script src= "scripts/date.js" defer></script>
+
+    <title>InmoAlanis</title>
+</head>
+
+
+<body>
+
+    <header>
+
+         <div class="container">
+                <a id="menu" href="#" aria-label="Open menu"></a> 
+                <img src="images/mylogo.webp" alt="chamber" height="100">
+                <span>INMOALANIS</span>
+            </div>
+            
+    </header>
+
+     <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="index.html" id="index">INDEX</a></li>
+                <li><a href="directory.html" id="contactus">CONTACT US</a></li>
+                <li><a href="joinus.html" id="join">JOIN US</a></li>
+               
+                
+            </ul>
+    </nav>
+
+    <main>
+        <h1>INMOALANIS</h1>
+         <div class="datos"> 
+            <form onsubmit="return testInfo(document.querySelector('input[name=title]'))" method="GET" action="thanks.html"> 
+
+            <h2>¡Send us your Information!</h2>
+            <label> First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+
+            <label> Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+
+            <label> Email <input type="email" name="email" required placeholder="something123@gmail.com" title="Your Email" autocomplete="email"></label>
+            
+            <label> Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="664-369-52-60"></label>
+            
+            <label> Which apartment are you interested in? <textarea name="description" title="Business Description" placeholder="Tell us which apartment are you interested in and ask any question you have..." ></textarea></label>
+            
+            
+            <label> <input type="hidden" name="timestamp" id="timestamp"></label>
+            
+
+
+            <h3>How would you prefer to be contacted?</h3>
+            <label> <input type="radio" name="membership" value="email"> Email</label>
+            <label> <input type="radio" name="membership" value="whatsapp"> WhatsApp</label>
+           
+
+            <input type="submit" value="Send Now">
+        </form>
+
+        <script> document.addEventListener('DOMContentLoaded', () =>{
+            const timestampInput = document.getElementById('timestamp');
+            const now = new Date();
+
+            timestampInput.value = now.toLocaleString();
+
+        });</script>
+
+
+    </main>
+
+
+
+      <footer>
+            <div class="izq">
+                <p>INMOALANIS</p>
+                <p class="first">©<span id="CurrentYear"></span> 🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico 🌮</p>
+                <p class="second">Last Update: <span id="lastModified"></span></p>
+            </div>
+            
+            <div class="der">
+                <p>WDD231 FINAL PROJECT</p>
+                <p>Moroni Alanis Navarro</p>
+                <p>(664)-369-52-60</p>
+            </div>
+        </footer>
+    <script src="scripts/code.js" type="module"></script>
+</body>
+</html>
