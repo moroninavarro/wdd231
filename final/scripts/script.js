@@ -18,5 +18,5 @@ document.querySelector('#results').innerHTML = `
 <p>Email: ${myInfo.get('email')}</p> 
 <p>Phone: ${myInfo.get('phone')}</p>
 <p>Your registration was recorded on ${myInfo.get('timestamp')}</p>
-<p>You will receive a message from a member of our team to contact you. Please be aware</p>
+<p>You will receive a message from a member of our team to contact you. Please be aware.</p>
 `
