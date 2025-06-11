@@ -27,7 +27,7 @@ body{
 }
 
 nav{
-    background-color:rgb(134, 87, 87);
+    background-color:rgba(179, 132, 132, 0.473);
     display: grid;
     grid-template-rows: 0fr;
     
@@ -129,7 +129,7 @@ nav ul {
     text-align: right;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: rgb(134, 87, 87);
+    background-color: rgba(179, 132, 132, 0.473);
     font-weight: 700;
     transition: 0.5s;
     font-size: 25px;
