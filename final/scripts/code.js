@@ -7,9 +7,9 @@ const showHere = document.querySelector("#allapartments")
 
 function displayItems(apartments){
     apartments.forEach(x => {
-        //build the card element
+       
         const thecard = document.createElement('div')
-        //build photo element
+        
 
         
         const thephoto = document.createElement('img')
