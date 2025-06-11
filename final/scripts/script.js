@@ -12,12 +12,11 @@ const myInfo = new URLSearchParams(window.location.search);
 
 
 document.querySelector('#results').innerHTML = `
-<p>Thank you for joining our organization, your information has been successfully received, now you are a new member.</p>
 <p>Welcome ${myInfo.get('first')} ${myInfo.get('last')}</p>
+<p>Thank you for send us your information, your data has been successfully received.</p>
 <p>This is the information we received:</p>
 <p>Email: ${myInfo.get('email')}</p> 
 <p>Phone: ${myInfo.get('phone')}</p>
-<p>Business Name: ${myInfo.get('organization')}</p>
 <p>Your registration was recorded on ${myInfo.get('timestamp')}</p>
-<p>As a new member you will receive information from our team to contact you, please check your email.</p>
+<p>You will receive a message from a member of our team to contact you. Please be aware</p>
 `
