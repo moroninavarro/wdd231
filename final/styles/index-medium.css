@@ -13,4 +13,70 @@
     #allapartments div img{
         width: 300px;
     }
+
+    /*Second Part*/
+
+    
+img:hover{
+    box-shadow: 0 0 50px #000000;
+    opacity: .5;
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    grid-gap: 1rem;
+    padding: 20px;
+    margin: 0;
+   
+}
+.container{
+     display: flex;
+    justify-content:space-around;
+
+   
+}
+
+
+#menu{
+    display: none;
+}
+
+
+nav {
+    display: block;
+    width: 100%;
+    
+}
+
+
+.navigation {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    background-color: rgb(134, 87, 87);
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+
+.navigation a:hover, navigation a:active {
+    color: white;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+
+
+nav.open{
+    grid-template-rows: unset;
+}
+
+
+
+
 } 

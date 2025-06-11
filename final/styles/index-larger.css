@@ -4,4 +4,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /*Second Part*/
+
+    
+#menu{
+    display: none;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+nav.open{
+    grid-template-rows: unset;
+}
+
 }
