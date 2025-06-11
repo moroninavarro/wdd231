@@ -1,22 +1,7 @@
-@media only screen and (min-width: 820px){
+@media only screen and (min-width: 900px){
 
 
-    #allapartments div{
-  
-    grid-template-areas: 
-    "url name"
-    "url description"
-    "url address"
-    "url price";
-    }
-
-    #allapartments div img{
-        width: 300px;
-    }
-
-    /*Second Part*/
-
-    
+   
 img:hover{
     box-shadow: 0 0 50px #000000;
     opacity: .5;
@@ -71,8 +56,9 @@ nav {
 
 .navigation li{
     display: inline-block;
-    background-color: rgba(179, 132, 132, 0.473);
+     background-color: rgba(179, 132, 132, 0.473);
 }
+
 
 
 nav.open{
@@ -81,5 +67,25 @@ nav.open{
 
 
 
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form textarea,
+form select{
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .7rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 70%;
 
-} 
+}
+
+
+
+}
