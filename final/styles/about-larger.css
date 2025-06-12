@@ -65,26 +65,4 @@ nav.open{
     grid-template-rows: unset;
 }
 
-
-form input[type=text],
-form input[type=tel],
-form input[type=date],
-form input[type=email],
-form textarea,
-form select{
-    display: block;
-    margin: .1rem 0 1rem 0 ;
-    padding: .7rem;
-    border: 1px solid #999;
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color: #555;
-    font-size: 1rem;
-    color: #3D405B;
-    width: 70%;
-
-}
-
-
-
 }
