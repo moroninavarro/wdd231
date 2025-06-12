@@ -158,10 +158,19 @@ h2{
     font-size: 1.5rem;
     
 }
+
+#allapartments div,
+#allapartments div h2,
+#allapartments div img,
+#allapartments div p,
+#allapartments div address,
+#allapartments div h3{
+    background-color: #f3e6d3;
+}
+
 #allapartments div{
     margin: 1rem 8px;
     border: 1px solid #000000;
-    background-color: #ebd1a6;
     border-radius: 8px;
     overflow: hidden;
 
@@ -177,41 +186,39 @@ h2{
 
 #allapartments div h2{
     margin: 1rem 10px;
-     background-color: #ebd1a6;
+    
+     
 }
 
 
 #allapartments div img {
     width: 100%;
     grid-area: url;
-     background-color: #ebd1a6;
+     
 }
 
 #allapartments div p{
     margin: 1rem 10px;
     font-size: 19px;
     grid-area: description;
-     background-color: #ebd1a6;
-     display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 #allapartments div address {
     margin: 1rem 10px;
     grid-area: address;
-     background-color: #ebd1a6;
-     display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #allapartments div h3{
     margin: 1rem 10px;
     grid-area: price;
     font-size: 30px;
-     background-color: #ebd1a6;
-     display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -270,7 +277,7 @@ footer span{
 
 .learn-more-btn{
     padding: 10px;
-    background-color: #000000;
+    background-color: rgba(226, 119, 119, 0.801);
     color: white;
     font-size: 20px;
 }
