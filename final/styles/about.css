@@ -1,8 +1,13 @@
 /*navigate Part*/
 *{
     font-family: "Quattrocento", serif;
+    
 }
 
+
+body{
+    overflow-x: hidden;
+}
 #menu{
     display: block;
     font-size: 3rem;
@@ -154,7 +159,6 @@ footer span{
     background-color:rgb(140, 176, 197);
 }
 .izq{
-    
     text-align: left;
 }
 
