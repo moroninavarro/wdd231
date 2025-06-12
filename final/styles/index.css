@@ -239,13 +239,17 @@ footer span{
     background-color:rgb(140, 176, 197);
 }
 .izq{
-    
-    text-align: left;
+    display:grid ;
+    align-content:space-between;
+     text-align: left;
 }
 
 .der{
-    text-align: right;
+    display:grid ;
+    align-content:space-between;
+     text-align: right;
 }
+
 
 /*For the Modal*/
 
