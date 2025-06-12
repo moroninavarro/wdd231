@@ -99,7 +99,7 @@ PRICE: $14,000 MXN/month`
     "address": "556 Fundadores Blvd, El Rubí",
     "description": "Condo with 24/7 security, gym, and event room.",
     "price": "$13,200 MXN/month",
-    "url": "prove.webp",
+    "url": "prove24.webp",
     "details": `CONDO FOR RENT
 Pacific Towers El Rubí
 
