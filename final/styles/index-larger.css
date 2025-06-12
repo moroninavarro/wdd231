@@ -20,4 +20,9 @@ nav.open{
     grid-template-rows: unset;
 }
 
+/*Buttons*/
+.learn-more-btn{
+    width: 300px;
+}
+
 }

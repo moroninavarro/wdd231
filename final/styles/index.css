@@ -238,3 +238,43 @@ footer span{
 .der{
     text-align: right;
 }
+
+/*For the Modal*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 223, 223, 0.527);
+}
+
+.modal-content{
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*Buttons*/
+
+
+.learn-more-btn{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+}
+.learn-more-btn:hover{
+    background-color: #0000008f;
+    cursor: pointer;
+}

@@ -4,6 +4,12 @@ console.log(apartments);
 
 const showHere = document.querySelector("#allapartments")
 
+const modal = document.getElementById('infoModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalText = document.getElementById('modalText');
+const closeBtn = document.getElementById('modalCloseBtn');
+
+
 
 function displayItems(apartments){
     apartments.forEach(x => {
@@ -34,8 +40,32 @@ function displayItems(apartments){
         theprice.innerHTML = x.price
         thecard.appendChild(theprice)
         
+    
+        const button = document.createElement('button')
+        button.textContent = 'LEARN MORE'
+        button.classList.add('learn-more-btn');
+        button.addEventListener('click', ()=>{
+            openModal(`Apartment ${x.name} Description`);
+        });
+        thecard.appendChild(button);
+        
         showHere.appendChild(thecard)
     })
 }
 
 displayItems(apartments)
+
+
+function openModal(title, text){
+    modalTitle.textContent = title;
+    modalText.textContent = text;
+    modal.style.display = 'block';
+}
+
+
+
+closeBtn.addEventListener('click', ()=>{
+    modal.style.display = 'none';
+});
+
+
