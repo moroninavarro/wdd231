@@ -45,7 +45,7 @@ function displayItems(apartments){
         button.textContent = 'LEARN MORE'
         button.classList.add('learn-more-btn');
         button.addEventListener('click', ()=>{
-            openModal(`Apartment ${x.name} Description`);
+            openModal(`Apartment ${x.name} `, `Description: ${x.description}`);
         });
         thecard.appendChild(button);
         
