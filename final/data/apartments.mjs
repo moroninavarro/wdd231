@@ -2,7 +2,7 @@ export const apartments = [
   {
     "name": "Horizonte Residences",
     "address": "1234 Agua Caliente Blvd, Zona Río",
-    "description": "Modern apartment with an equipped kitchen and a balcony overlooking the city.",
+    "description": "Modern apartment with an equipped kitchen and a balcony.",
     "price": "$12,500 MXN/month",
     "url": "prove3.webp",
     "details": `APARTMENT FOR RENT
