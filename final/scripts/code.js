@@ -40,12 +40,15 @@ function displayItems(apartments){
         theprice.innerHTML = x.price
         thecard.appendChild(theprice)
         
+
+        const thedetails = document.createElement('details')
+        thedetails.innerHTML = x.details
     
         const button = document.createElement('button')
-        button.textContent = 'LEARN MORE'
+        button.textContent = 'READ MORE'
         button.classList.add('learn-more-btn');
         button.addEventListener('click', ()=>{
-            openModal(`Apartment ${x.name} `, `Description: ${x.description}`);
+            openModal(`Apartment: ${x.name} ${x.details}. Description: \n${x.description}`);
         });
         thecard.appendChild(button);
         
