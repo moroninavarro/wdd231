@@ -1,4 +1,8 @@
 /*navigate Part*/
+*{
+    font-family: "Quattrocento", serif;
+}
+
 #menu{
     display: block;
     font-size: 3rem;

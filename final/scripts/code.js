@@ -72,3 +72,23 @@ closeBtn.addEventListener('click', ()=>{
 });
 
 
+function visitas() {
+    const lastdate = localStorage.getItem('last');
+
+    if (lastdate){
+        const now = new Date();
+        const last = new Date(lastdate);
+
+
+        const difference = now - last;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+
+        alert(`"You last visited ${days} days ago.`)
+    }
+    else{
+        alert(`WELCOME.`);
+    }
+    localStorage.setItem('last', new Date().toISOString());
+}
+window.onload = visitas;
