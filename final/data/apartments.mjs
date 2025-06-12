@@ -32,7 +32,7 @@ export const apartments = [
     "address": "556 Fundadores Blvd, El Rubí",
     "description": "Condo with 24/7 security, gym, and event room.",
     "price": "$13,200 MXN/month",
-    "url": "prove7.webp"
+    "url": "prove.webp"
   },
   {
     "name": "Monteverde",
