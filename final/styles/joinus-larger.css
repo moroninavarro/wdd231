@@ -2,6 +2,7 @@
 
 
    
+  
 img:hover{
     box-shadow: 0 0 50px #000000;
     opacity: .5;
@@ -22,7 +23,9 @@ header{
 
    
 }
-
+.container img{
+    transform: translateX(20px);
+}
 
 #menu{
     display: none;
@@ -64,7 +67,6 @@ nav {
 nav.open{
     grid-template-rows: unset;
 }
-
 
 form input[type=text],
 form input[type=tel],

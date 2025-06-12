@@ -1,3 +1,4 @@
+/*navigate Part*/
 #menu{
     display: block;
     font-size: 3rem;
@@ -126,7 +127,7 @@ nav ul {
     transition: 0.5s;
     font-size: 25px;
 }
-/*FOOTER SECTION*/
+
 
 
 h1{

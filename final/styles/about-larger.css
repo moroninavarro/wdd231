@@ -22,6 +22,9 @@ header{
 
    
 }
+.container img{
+    transform: translateX(20px);
+}
 
 
 #menu{
