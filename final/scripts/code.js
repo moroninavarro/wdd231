@@ -11,6 +11,19 @@ const closeBtn = document.getElementById('modalCloseBtn');
 
 
 
+
+async function fetchApartments() {
+    try{
+        console.log("Fetching apartment data...");
+        await new Promise(res => setTimeout(res, 500));
+        displayItems(apartments);
+    } catch(error){
+        console.error("Error fetching apartments:", error);
+        showHere.innerHTML = `<p style="color:red;">Failed to load apartments.</p>`;
+    }
+}
+
+
 function displayItems(apartments){
     apartments.forEach(x => {
        
@@ -91,4 +104,7 @@ function visitas() {
     }
     localStorage.setItem('last', new Date().toISOString());
 }
-window.onload = visitas;
+window.onload = () => {
+    visitas();
+    fetchApartments();
+}
