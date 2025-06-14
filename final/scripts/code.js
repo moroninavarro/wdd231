@@ -12,22 +12,14 @@ const closeBtn = document.getElementById('modalCloseBtn');
 
 
 
-async function fetchApartments() {
-    try{
-        await new Promise(res => setTimeout(res, 500));
-        displayItems(apartments);
-    } catch(error){
-        showHere.innerHTML = `<p style="color:red;">Failed to load apartments.</p>`;
-    }
-}
 
 
 function displayItems(apartments){
     apartments.forEach(x => {
-       
+        
         const thecard = document.createElement('div')
         
-
+        
         
         const thephoto = document.createElement('img')
         thephoto.src = `images/${x.url}`
@@ -51,10 +43,10 @@ function displayItems(apartments){
         theprice.innerHTML = x.price
         thecard.appendChild(theprice)
         
-
+        
         const thedetails = document.createElement('details')
         thedetails.innerHTML = x.details
-    
+        
         const button = document.createElement('button')
         button.textContent = 'READ MORE'
         button.classList.add('learn-more-btn');
@@ -67,7 +59,13 @@ function displayItems(apartments){
     })
 }
 
-displayItems(apartments)
+async function fetchApartments() {
+    try{
+        displayItems(apartments);
+    } catch(error){
+        showHere.innerHTML = `<p style="color:red;">Failed to load apartments.</p>`;
+    }
+}
 
 
 function openModal(title, text){
