@@ -1,5 +1,5 @@
 import {apartments} from '../data/apartments.mjs'
-console.log(apartments);
+
 
 
 const showHere = document.querySelector("#allapartments")
@@ -14,11 +14,9 @@ const closeBtn = document.getElementById('modalCloseBtn');
 
 async function fetchApartments() {
     try{
-        console.log("Fetching apartment data...");
         await new Promise(res => setTimeout(res, 500));
         displayItems(apartments);
     } catch(error){
-        console.error("Error fetching apartments:", error);
         showHere.innerHTML = `<p style="color:red;">Failed to load apartments.</p>`;
     }
 }
