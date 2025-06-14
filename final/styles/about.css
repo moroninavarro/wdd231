@@ -146,17 +146,21 @@ h1{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color:rgb(140, 176, 197);
+    background-color: rgb(255, 223, 223);
     padding: 20px;
     text-align: center;
     font-size: 22px;
     color: rgb(0, 0, 0);
 }
 footer div, p{
-    background-color:rgb(140, 176, 197);
+    background-color: rgba(255, 223, 223, 0.295);
 }
 footer span{
-    background-color:rgb(140, 176, 197);
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.first, .second{
+    background-color: rgba(255, 223, 223, 0.295);
 }
 .izq{
     display:grid ;
